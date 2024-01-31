@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+li { list-style: none; }
+a { 
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: calc(1440px - 260px);
+  width: 95%;
+  margin: 0 auto;
+}
+
+// ***Переменные***
+@import './vars';
+
+// ***Все стили блоков***
+@import './header/navbar'

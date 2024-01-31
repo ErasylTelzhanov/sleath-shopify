@@ -1,0 +1,61 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  height: 76px;
+
+  @include font(0.875rem, $dark-color, 500);
+
+  &__list {
+    display: none;
+    align-items: center;
+    column-gap: 3.75em;
+
+    @include mediaTablet {
+      display: flex;
+    }
+  }
+
+  &__link-dropdown {
+    display: flex;
+    align-items: center;
+  }
+
+  &__login {
+    display: none;
+    align-items: center;
+    column-gap: 2em;
+
+    @include mediaTablet {
+      display: flex;
+    }
+  }
+
+  &__login-button {
+    border: 1px solid $dark-color;
+    border-radius: 7em;
+    padding: 0.85em 2.3em;
+  }
+
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    order: 1;
+    cursor: pointer;
+
+    @include mediaTablet {
+      display: none;
+    }
+  }
+  &__burger-line {
+    background-color: $dark-color;
+    width: 20px;
+    height: 1.5px;
+  }
+}
+
+.nav-list-mobile {
+  display: none;
+}
